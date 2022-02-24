@@ -2,9 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import { Link, useMatch, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getCurrentProfile } from '../../actions/profile';
-import { createProfile } from '../../actions/profile';
-
+import { getCurrentProfile, createProfile } from '../../actions/profile';
 
 const initialState = {
   company: '',
