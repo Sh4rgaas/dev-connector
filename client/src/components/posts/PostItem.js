@@ -24,7 +24,7 @@ showActions }) => {
               {text}
             </p>
              <p class="post-date">
-                Posted on <Moment format='YYYY/MM/DD'>{date}</Moment>
+                Posted on <Moment format='DD/MM/YYYY'>{date}</Moment>
             </p>
 
             {showActions && <Fragment>
