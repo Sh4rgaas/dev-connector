@@ -20,7 +20,7 @@ const Profile = ({ getProfileById, profile: { profile, loading }, auth }) => {
   return <section className="container">
   <Fragment>
       { profile === null || loading ? <Spinner /> : 
-      <Fragment>profile
+      <Fragment>
           <Link to='/profiles' className='btn btn-light'>
               Back to Profiles
           </Link>
