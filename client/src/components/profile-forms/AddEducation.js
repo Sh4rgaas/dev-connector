@@ -96,7 +96,7 @@ const AddEducation = ({ addEducation }) => {
             name="description"
             cols="30"
             rows="5"
-            placeholder="Job Description"
+            placeholder="Education Description"
             value={description}
             onChange={onChange}
           />
