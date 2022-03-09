@@ -40,11 +40,11 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       <form className='form' onSubmit={onSubmit}>
         <div className='form-group'>
           <input type='text' placeholder='Name' name='name' value={name}
-            onChange={onChange} required />
+            onChange={onChange} maxLength='100' required />
         </div>
         <div className='form-group'>
           <input type='email' placeholder='Email Address' name='email' value={email}
-            onChange={onChange} required/>
+            onChange={onChange} maxLength='100' required/>
           <small className='form-text'>
             This site uses Gravatar so if you want a profile image, use a
             Gravatar email
@@ -58,6 +58,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={password}
             onChange={onChange}
             minLength='6'
+            maxLength='12'
           />
         </div>
         <div className='form-group'>
@@ -68,6 +69,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={password2}
             onChange={onChange}
             minLength='6'
+            maxLength='12'
           />
         </div>
         <input type='submit' className='btn btn-primary' value='Register' />

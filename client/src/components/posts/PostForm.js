@@ -25,6 +25,8 @@ const PostForm = ({ addPost }) => {
             required
             value={text}
             onChange={e => setText(e.target.value)}
+            minLength='3'
+            maxLength='1000'
           ></textarea>
           <input type="submit" className="btn btn-dark my-1" value="Submit" />
         </form>

@@ -41,6 +41,8 @@ const AddEducation = ({ addEducation }) => {
             name="school"
             value={school}
             onChange={onChange}
+            minLength='3'
+            maxLength='70'
             required
           />
         </div>
@@ -51,6 +53,8 @@ const AddEducation = ({ addEducation }) => {
             name="degree"
             value={degree}
             onChange={onChange}
+            minLength='2'
+            maxLength='70'
             required
           />
         </div>
@@ -59,6 +63,7 @@ const AddEducation = ({ addEducation }) => {
             type="text"
             placeholder="* Field of Study"
             name="fieldofstudy"
+            maxLength='100'
             value={fieldofstudy}
             onChange={onChange}
           />
@@ -96,9 +101,10 @@ const AddEducation = ({ addEducation }) => {
             name="description"
             cols="30"
             rows="5"
-            placeholder="Education Description"
+            placeholder="Description"
             value={description}
             onChange={onChange}
+            maxLength='500'
           />
         </div>
         <input type="submit" className="btn btn-primary my-1" />

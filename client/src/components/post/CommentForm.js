@@ -23,6 +23,8 @@ const CommentForm = ({ postId, addComment }) => {
             rows="5"
             placeholder="Add a comment"
             required
+            minLength='5'
+            maxLength='1200'
             value={text}
             onChange={e => setText(e.target.value)}
           ></textarea>

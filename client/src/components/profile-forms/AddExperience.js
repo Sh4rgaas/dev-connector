@@ -42,6 +42,8 @@ const AddExperience = ({ addExperience }) => {
             name="title"
             value={title}
             onChange={onChange}
+            minLength='3'
+            maxLength='70'
             required
           />
         </div>
@@ -50,6 +52,8 @@ const AddExperience = ({ addExperience }) => {
             type="text"
             placeholder="* Company"
             name="company"
+            minLength='3'
+            maxLength='70'
             value={company}
             onChange={onChange}
             required
@@ -60,6 +64,8 @@ const AddExperience = ({ addExperience }) => {
             type="text"
             placeholder="Location"
             name="location"
+            minLength='3'
+            maxLength='70'
             value={location}
             onChange={onChange}
           />
@@ -100,6 +106,8 @@ const AddExperience = ({ addExperience }) => {
             placeholder="Job Description"
             value={description}
             onChange={onChange}
+            minLength='3'
+            maxLength='500'
           />
         </div>
         <input type="submit" className="btn btn-primary my-1" />
