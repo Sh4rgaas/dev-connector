@@ -33,24 +33,24 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   return (
     <Fragment>
         <section className="container">
-      <h1 class='large text-primary'>Sign Up</h1>
-      <p class='lead'>
-        <i class='fas fa-user'></i> Create Your Account
+      <h1 className='large text-primary'>Sign Up</h1>
+      <p className='lead'>
+        <i className='fas fa-user'></i> Create Your Account
       </p>
-      <form class='form' onSubmit={onSubmit}>
-        <div class='form-group'>
+      <form className='form' onSubmit={onSubmit}>
+        <div className='form-group'>
           <input type='text' placeholder='Name' name='name' value={name}
             onChange={onChange} required />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input type='email' placeholder='Email Address' name='email' value={email}
             onChange={onChange} required/>
-          <small class='form-text'>
+          <small className='form-text'>
             This site uses Gravatar so if you want a profile image, use a
             Gravatar email
           </small>
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='password'
             placeholder='Password'
@@ -60,7 +60,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             minLength='6'
           />
         </div>
-        <div class='form-group'>
+        <div className='form-group'>
           <input
             type='password'
             placeholder='Confirm Password'
@@ -70,9 +70,9 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             minLength='6'
           />
         </div>
-        <input type='submit' class='btn btn-primary' value='Register' />
+        <input type='submit' className='btn btn-primary' value='Register' />
       </form>
-      <p class='my-1'>
+      <p className='my-1'>
         Already have an account? <Link to='login'>Sign In</Link>
       </p>
       </section>

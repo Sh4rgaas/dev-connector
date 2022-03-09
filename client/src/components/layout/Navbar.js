@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated, loading}, logout }) => {
+  console.log('isAuthenticated: ' ,isAuthenticated);
   const authLinks = (
         <ul>
           <li><Link to='/profiles'>
@@ -39,7 +40,7 @@ const Navbar = ({ auth: { isAuthenticated, loading}, logout }) => {
             <i className="fas fa-code"></i> DevConnector
           </Link>
         </h1>
-      { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks }</Fragment>)  }
+      { (<Fragment>{ isAuthenticated ? authLinks : guestLinks }</Fragment>)  }
     </nav>
   );
 };
