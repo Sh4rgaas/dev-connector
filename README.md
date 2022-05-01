@@ -5,4 +5,4 @@
 * Reusable components
 * Routing with dynamic routes (React Router)
 * Complete Redux implementation
-* Intergrated databade with mongoDB
+* Integrated database with mongoDB
