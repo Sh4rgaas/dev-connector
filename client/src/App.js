@@ -49,7 +49,7 @@ const App = () => {
           <Route
             path="/create-profile"
             element={<PrivateRoute component={ProfileForm} />}/>
-           <Route
+            <Route
             path="edit-profile"
             element={<PrivateRoute component={ProfileForm} />}/>
             <Route
